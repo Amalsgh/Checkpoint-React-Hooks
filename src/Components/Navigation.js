@@ -1,14 +1,16 @@
 import React from 'react'
-import { Container, Navbar } from 'react-bootstrap'
+import { Container, Nav, Navbar } from 'react-bootstrap'
 import './Movie.css';
 
 
+
 const Navigation = () => {
+
 return (
     <div>
     <Navbar bg="dark" variant="dark">
         <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
             <img
             alt="logo"
             src="https://cdn-icons-png.flaticon.com/512/3820/3820338.png"
@@ -18,6 +20,11 @@ return (
             />{' '}
             Movie App
         </Navbar.Brand>
+        <Nav className="me-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href='/AboutUs'>About Us</Nav.Link>
+            <Nav.Link href ="/Moremovies"> More Movies </Nav.Link>
+        </Nav>
         </Container>
     </Navbar> 
 

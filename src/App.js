@@ -4,8 +4,8 @@ import './App.css';
 import { moviesData } from './Components/Data';
 import FilterMovie from './Components/FilterMovie';
 import MovieList from './Components/MovieList';
-import Navigation from './Components/Navigation';
 import AddMovie from './Components/AddMovie'
+
 
 function App() {
   const [movies , setMovies] = useState(moviesData)
@@ -16,12 +16,14 @@ function App() {
   const [inputRate, setInputRate] = useState(0)
 
 
+
   return (
     <div className="App">
-    <Navigation/>
+    
     <FilterMovie inputSearch={inputSearch} setInputSearch={setInputSearch} inputRate={inputRate} setInputRate={setInputRate}  />
     <MovieList movies={movies}  inputSearch ={inputSearch} inputRate={inputRate} />
     <AddMovie add={add}/>
+
     </div>
   );
 }

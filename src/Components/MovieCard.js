@@ -1,5 +1,7 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import './Movie.css'
+
+import { Button, Card } from 'react-bootstrap'
 import ReactStars from 'react-stars'
 
 const MovieCard = ({movie}) => {
@@ -16,6 +18,11 @@ const MovieCard = ({movie}) => {
           size={24}
           color2={'#ffd700'} />
           </Card.Text>
+          <div className='btn'>
+            <Button variant="dark"><a href={movie.trailer} target={"blank"}>Watch Trailer</a></Button>
+            <Button  variant="dark"><a href={movie.description}>Description</a></Button>
+          </div>
+          
         </Card.Body>
       </Card>
     </div>

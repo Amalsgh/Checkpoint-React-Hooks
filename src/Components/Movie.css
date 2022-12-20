@@ -5,10 +5,21 @@
     flex-direction: row;
     margin: 50px;
 }
-button {
+.bouton {
     background-color: black !important;
     border-color: black !important;
+    margin-left: 45%;
+    
 }
 .stars {
     margin-left: 45%;
+}
+.btn {
+    display: flex;
+    justify-content: space-around;
+}
+a {
+    text-decoration: none;
+    color: white;
+    
 }
